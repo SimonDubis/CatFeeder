@@ -22,6 +22,7 @@ class GameFragment : Fragment() {
         val binding: FragmentGameBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_game, container, false
         )
+        binding.satietyCountText.text = satietyCount.toString();
         binding.feedButton.setOnClickListener {
             satietyCount++
             if (satietyCount % 15 == 0) {
